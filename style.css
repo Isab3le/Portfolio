@@ -284,6 +284,10 @@ logo span {
   cursor: pointer;
 }
 
+.about .btn {
+  margin-top: 2rem;
+}
+
 .heading {
   text-align: center;
   font-size: 8rem;
@@ -299,7 +303,9 @@ logo span {
 }
 
 .about-content p {
-  font-size: 1.6rem;
+  text-align: justify;
+  line-height: 1.2;
+  font-size: 2rem;
   margin: 2rem 0 rem;
 }
 
@@ -333,3 +339,71 @@ logo span {
   width: 50px;
 }
 
+.projects {
+  background: var(--bg-color);
+  color: #000;
+}
+
+.projects h2 {
+  margin-bottom: 5rem;
+  color: #000;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+
+.projects-box {
+  border: 3px solid var(--main-color);
+  height: 300px;
+  border-radius: 1em;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.projects-box:hover {
+  background: var(--main-color);
+  color: white;
+  transform: scale(1.03);
+}
+
+.contact {
+  background-color: var(--second-bg-color);
+}
+
+.contact h2 {
+  margin-bottom: 3rem;
+  color: #000;
+}
+
+.contact form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box input, .contact form textarea{
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  border-radius: 0.8rem;
+  border: 2px solid var(--main-color);
+  margin: 1rem 0;
+  resize: none;
+}
+
+.contact form .btn {
+  margin-top: 2rem;
+}
