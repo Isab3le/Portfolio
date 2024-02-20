@@ -248,7 +248,7 @@ logo span {
   75%,
   90%,
   95% {
-    width: 0  ;
+    width: 0;
   }
   5%,
   20%,
@@ -278,7 +278,7 @@ logo span {
 
 .about-img img {
   position: relative;
-  width: 30vw;
+  width: 20vw;
   border-radius: 50%;
   top: 1rem;
   cursor: pointer;
@@ -303,6 +303,8 @@ logo span {
 }
 
 .about-content p {
+  margin-bottom: 2rem;
+  text-indent: 2rem;
   text-align: justify;
   line-height: 1.2;
   font-size: 2rem;
@@ -392,7 +394,8 @@ logo span {
   flex-wrap: wrap;
 }
 
-.contact form .input-box input, .contact form textarea{
+.contact form .input-box input,
+.contact form textarea {
   width: 100%;
   padding: 1.5rem;
   font-size: 1.6rem;
@@ -406,4 +409,8 @@ logo span {
 
 .contact form .btn {
   margin-top: 2rem;
+}
+
+.footer {
+  position: relative;
 }
