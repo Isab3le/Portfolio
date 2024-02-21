@@ -413,4 +413,119 @@ logo span {
 
 .footer {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #7459d0;
+  height: 190px;
+  padding: 20px 50px;
+  flex-direction: column;
+  opacity: 0.9;
+}
+
+.footer .social,
+.footer .list {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.footer .social li,
+.footer .list li {
+  list-style: none;
+} 
+
+.footer .social a {
+  font-size: 3em;
+  color: var(--bg-color);
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.footer .social a:hover {
+  transform: translateY(-10px);
+}
+
+.footer .list a {
+  font-size: 1.5em;
+  color: white;
+  margin: 0 10px;
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.footer .list a:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: var(--bg-color);
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+  opacity: 0.75;
+}
+
+.footer .wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(/img/wave.png);
+  background-size: 1000px 120px;
+}
+
+.footer .wave#wave1 {
+  z-index: 1000;
+  opacity: 0.9;
+  bottom: 0;
+  animation: animateWave 4s linear infinite;
+}
+
+.footer .wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 0;
+  animation: animateWave-02 4s linear infinite;
+}
+
+.footer .wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWave-02 3s linear infinite;
+}
+
+.footer .wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animateWave-02 3s linear infinite;
+}
+
+@keyframes animateWave {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-position-x: 0px;
+  }
+}
+
+@keyframes animateWave-02 {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
 }
