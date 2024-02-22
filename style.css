@@ -360,8 +360,8 @@ logo span {
 
 .projects-box {
   position: relative;
-  width: 500px; 
-  height: 300px; 
+  width: 500px;
+  height: 300px;
   border: 3px solid var(--main-color);
   border-radius: 1em;
   cursor: pointer;
@@ -374,10 +374,10 @@ logo span {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; 
-  object-fit: cover; 
-  border-radius: 1em; 
-  transition: transform 0.3s ease; 
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1em;
+  transition: transform 0.3s ease;
 }
 
 .projects-box:hover img {
@@ -455,7 +455,7 @@ logo span {
 .footer .social li,
 .footer .list li {
   list-style: none;
-} 
+}
 
 .footer .social a {
   font-size: 3em;
@@ -596,4 +596,33 @@ logo span {
   color: var(--main-color);
   margin: 0.5rem;
   font-size: 1.5rem;
+}
+
+@media (max-width: 1285px) {
+  html{
+    font-size: 55%;
+  }
+  .projects-container{
+    padding-bottom: 7rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 5rem;
+  }
+  .home p{
+    width: 700px;
+  }
+  .home img {
+    width: 32vw;
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+    padding: 2rem 3%;
+  }
+  section {
+    padding: 2rem 3%;
+  }
+  .footer {
+    padding: 2rem 3%;
+  }
 }
