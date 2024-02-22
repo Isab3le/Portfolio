@@ -459,10 +459,11 @@ logo span {
 
 .footer .social a {
   font-size: 3em;
-  color: var(--bg-color);
+  color: white;
   margin: 0 10px;
   display: inline-block;
   transition: 0.5s;
+  border-radius: 50%;
 }
 
 .footer .social a:hover {
@@ -481,6 +482,7 @@ logo span {
 
 .footer .list a:hover {
   opacity: 1;
+  border-bottom: 2px solid white;
 }
 
 .footer p {
