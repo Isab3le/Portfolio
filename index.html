@@ -24,7 +24,7 @@
       <a href="#skills">Skills</a> <!-- Corrigido o atributo href para apontar para #skills -->
       <a href="#contact">Contato</a> <!-- Corrigido o atributo href para apontar para #contact -->
     </nav>
-</header>
+  </header>
 
 
   <section class="home" id="home">
@@ -40,12 +40,12 @@
       <p>Apaixonada por criar experiências digitais excepcionais. Como desenvolvedora front-end, transformo conceitos criativos em interfaces interativas e funcionais, buscando sempre a harmonia entre design e usabilidade. Explore meu portfólio e descubra como posso elevar a presença online do seu projeto.</p>
 
       <div class="social-icons">
-        <a href="https://www.linkedin.com/in/isabele-souza/"><i class='bx bxl-linkedin-square'></i></a>
-        <a href="mailto:isabele.dev@gmail.com"><i class='bx bxs-envelope'></i></a>
-        <a href="https://github.com/Isab3le"><i class='bx bxl-github'></i></a>
+        <a href="https://www.linkedin.com/in/isabele-souza/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+        <a href="mailto:isabele.dev@gmail.com" target="_blank"><i class='bx bxs-envelope'></i></a>
+        <a href="https://github.com/Isab3le" target="_blank"><i class='bx bxl-github'></i></a>
       </div>
 
-      <a href="mailto:isabele.dev@gmail.com" class="btn"> Contrate-me </a>
+      <a href="mailto:isabele.dev@gmail.com" class="btn" target="_blank"> Contrate-me </a>
     </div>
   </section>
 
@@ -57,12 +57,12 @@
       </h3>
       <p>Com uma base sólida em engenharia mecânica, minha jornada profissional tomou um rumo empolgante quando ingressei em uma empresa júnior durante meu curso. Foi lá que descobri minha paixão pelo mundo da programação, inicialmente trabalhando em projetos com HTML, CSS, JavaScript e WordPress.</p>
 
-      <p>Após minha saída da engenharia mecânica, mergulhei de cabeça no universo da programação, expandindo meu conhecimento para Python, C, C++, Bootstrap, Node, React, REST API, e SQL.</p>
+      <p>Após minha saída da engenharia mecânica, mergulhei de cabeça no universo da programação, expandindo meu conhecimento para Python, C, C++, Bootstrap, Node, React, REST API, e SQL. Hoje estou concluindo o curso Técnico em Web Design no Instituto Federal Da Bahia, onde irei sair com um certificado de FullStack.</p>
 
       <p>Além de minhas habilidades técnicas, também sou UX/UI designer proficient com ferramentas como Photoshop e Figma. Aprendi a utilizar Git e GitHub para gerenciamento de código e versionamento. Minha jornada não se limita apenas à programação; desenvolvi habilidades de liderança, sendo capaz de prospectar e gerenciar projetos de forma eficiente.</p>
 
       <p>Sou uma entusiasta do aprendizado contínuo e estou sempre em busca de desafios que me permitam crescer profissionalmente. Estou empolgada para contribuir com minha experiência e habilidades para projetos inovadores. Vamos criar algo incrível juntos!</p>
-      <a href="https://drive.google.com/file/d/1T5B2LLDk1c4MSyDP8vryHaKv_G-JKH8x/view?usp=sharing" class="btn read-more">Saiba mais</a>
+      <a href="https://drive.google.com/file/d/1T5B2LLDk1c4MSyDP8vryHaKv_G-JKH8x/view?usp=sharing" class="btn read-more" target="_blank">Saiba mais</a>
     </div>
 
     <div class="about-img">
@@ -74,39 +74,51 @@
     <h2 class="heading">Projetos</h2>
     <div class="projects-container">
       <div class="projects-box">
-        <div class="projects-info">
-          <img src="/img/DevLinks.png" alt="">
-        </div>
+        <a href="https://isab3le.github.io/DevLinks/" target="_blank">
+          <div class="projects-info">
+            <img src="/img/DevLinks.png" alt="">
+          </div>
+        </a>
       </div>
 
       <div class="projects-box">
-        <div class="projects-info">
-          <img src="/img/site-mel.png" alt="">
-        </div>
+        <a href="https://isab3le.github.io/Website-Mel/" target="_blank">
+          <div class="projects-info">
+            <img src="/img/site-mel.png" alt="">
+          </div>
+        </a>
       </div>
 
       <div class="projects-box">
-        <div class="projects-info">
-          <img src="/img/pagina-login.png" alt="">
-        </div>
+        <a href="https://isab3le.github.io/Pagina-de-login/" target="_blank">
+          <div class="projects-info">
+            <img src="/img/pagina-login.png" alt="">
+          </div>
+        </a>
       </div>
 
       <div class="projects-box">
-        <div class="projects-info">
-          <img src="/img/pagina-de-tarefas.png" alt="">
-        </div>
+        <a href="https://isab3le.github.io/Lista-de-tarefas/" target="_blank">
+          <div class="projects-info">
+            <img src="/img/pagina-de-tarefas.png" alt="">
+          </div>
+        </a>
       </div>
 
       <div class="projects-box">
-        <div class="projects-info">
-          <img src="/img/site-cafe.png" alt="">
-        </div>
+        <a href="https://isab3le.github.io/Website-Cafe/" target="_blank">
+          <div class="projects-info">
+            <img src="/img/site-cafe.png" alt="">
+          </div>
+        </a>
       </div>
 
       <div class="projects-box">
-        <div class="projects-info">
-          <img src="/img/site-academia.png" alt="">
-        </div>
+        <a href="https://isab3le.github.io/Website-Mel/" target="_blank">
+          <div class="projects-info">
+            <img src="/img/site-academia.png" alt="">
+          </div>
+        </a>
       </div>
     </div>
   </section>
@@ -232,7 +244,7 @@
   <section class="contact" id="contact">
     <h2 class="heading">Contate-<span>Me</span></h2>
 
-    <form action="#">
+    <form action="sendEmail.php" method="post">
       <div class="input-box">
         <input type="nome" placeholder="Nome Completo">
         <input type="email" placeholder="E-mail">
@@ -258,18 +270,16 @@
     </div>
 
     <div class="social">
-      <a href="#"><i class='bx bxl-linkedin-square'></i></a>
-      <a href="#"><i class='bx bxs-envelope'></i></a>
-      <a href="#"><i class='bx bxl-github'></i></a>
+      <a href="https://www.linkedin.com/in/isabele-souza/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+      <a href="mailto:isabele.dev@gmail.com" target="_blank"><i class='bx bxs-envelope'></i></a>
+      <a href="https://github.com/Isab3le" target="_blank"><i class='bx bxl-github'></i></a>
     </div>
 
     <ul class="list">
       <li>
-        <a href="#">FAQ</a>
-        <a href="#">Serviços</a>
-        <a href="#">Sobre Mim</a>
-        <a href="#">Contato</a>
-        <a href="#">Política de Privacidade</a>
+        <a href="#skills">Serviços</a>
+        <a href="#about">Sobre Mim</a>
+        <a href="#contact">Contato</a>
       </li>
     </ul>
     <p class="copyright">
