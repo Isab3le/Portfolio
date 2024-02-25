@@ -1,10 +1,10 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST['name'];
+    $name = $_POST['nome']; // Mudança aqui, correspondendo ao atributo 'name' do input
     $email = $_POST['email'];
-    $phone = $_POST['phone'];
-    $subject = $_POST['subject'];
-    $message = $_POST['message'];
+    $phone = $_POST['numero']; // Mudança aqui, correspondendo ao atributo 'name' do input
+    $subject = $_POST['assunto']; // Mudança aqui, correspondendo ao atributo 'name' do input
+    $message = $_POST['mensagem']; // Mudança aqui, correspondendo ao atributo 'name' do textarea
     
     // Configure o seu email aqui
     $to = "isabele.dev@gmail.com";
@@ -13,11 +13,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     // Envie o email
     if (mail($to, $subject, $body)) {
-        echo "Mensagem enviada com sucesso!";
+        echo "Mensagem enviada com sucesso.";
     } else {
-        echo "Erro ao enviar a mensagem.";
+        echo "Erro ao enviar mensagem.";
     }
 } else {
-    echo "Este arquivo não pode ser acessado diretamente.";
+    echo "Método inválido de envio.";
 }
 ?>
