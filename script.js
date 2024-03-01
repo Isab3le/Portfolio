@@ -1,15 +1,15 @@
-let menuIcon = document.querySelector('#menu-icon'); // Corrigido para selecionar pelo ID
+let menuIcon = document.querySelector('#menu-icon'); 
 let navbar = document.querySelector('.navbar');
 
 let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('.navbar a'); // Corrigido para selecionar os links dentro da barra de navegação
+let navLinks = document.querySelectorAll('.navbar a'); 
 
 window.onscroll = () => {
   sections.forEach(sec => {
     let top = window.scrollY;
     let offset = sec.offsetTop - 150;
-    let height = sec.offsetHeight; // Corrigido para obter a altura da seção
-    let id = sec.getAttribute('id'); // Adicionado para obter o ID da seção
+    let height = sec.offsetHeight; 
+    let id = sec.getAttribute('id');
 
     if (top >= offset && top < offset + height) {
       navLinks.forEach(link => {
@@ -23,5 +23,5 @@ window.onscroll = () => {
 menuIcon.onclick = () => {
   menuIcon.classList.toggle('bx-x');
   menuIcon.classList.toggle('active');
-  navbar.classList.toggle('active'); // Adicionado para alternar a classe ativa na barra de navegação
+  navbar.classList.toggle('active');
 };
